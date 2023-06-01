@@ -1,0 +1,270 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+:root {
+    --main-color:rgb(96, 219, 96);
+    --black-color: #121212;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+}
+
+
+
+/*! ana html kodları  */
+
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #40704d;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    width: 0.8rem;
+    background-color: var(--black-color);
+}
+
+body{
+    background-color: var(--main-color);
+    
+}
+
+section{
+
+    padding: 3.5rem 7%;
+}
+  
+.btn{
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color:var(--black-color);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    opacity:0.5;
+}
+
+
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+
+
+}
+
+
+
+/* header başlangıç*/
+.header .logo img{
+    width: 10rem;
+}
+
+.header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size:1.6rem;
+    color:var(--black-color);
+    border-bottom: 0.1rem solid transparent ;
+}
+
+.header .navbar .active,
+
+.header .navbar a:hover{
+    
+    border-color:var(--main-color);
+    padding-bottom:  0.5rem;
+
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+
+
+}
+
+/* header son*/
+
+
+
+/* home başlangıç*/
+.home{
+    min-height: 100vh;
+    background:url(../Resim/pexels-ann-marie-kennon-1296000.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top:-14.5rem;
+    display:flex;
+    align-items: center;
+    
+    
+}
+
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3 {
+    font-size: 6rem;
+    color: #fff;
+     
+}
+
+.home .content p{
+
+    font-size: 2rem;
+    font-weight: 3rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:#ccc;
+    text-transform: initial;
+}
+
+/* home son*/
+
+/* kısayol başlangıç*/
+
+.heading  span{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom:3.5rem;
+    border-bottom: 0.1rem solid #fff;
+    padding-bottom: 0%;
+    
+}
+
+
+
+
+.kisayollar .box-container{
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(60rem,1fr) );
+    gap:1.5rem ;
+}
+
+
+.kisayollar .box{
+    padding: 3rem;
+    background-image:linear-gradient(white,gray);
+    border-radius: 3rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+
+.kisayollar .box-container .box img{
+    width:100%;
+    object-fit: cover ;
+}
+
+.kisayollar .box-container .box .kisayol-category{
+    font-size:2rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    
+}
+
+.kisayollar .box-container .box h3{
+    font-size:2.0rem;
+    padding: 1rem 0;
+
+}
+
+.kisayollar .box-container .box-head .yazi{
+    font-size:2rem;
+    padding: 2.5rem 0;
+}
+/* kısayol son*/
+
+.ozellik .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(60rem,1fr) );
+    gap:1.5rem ;
+}
+
+.ozellik .box{
+    padding: 3rem;
+    background-image:linear-gradient(rgb(170, 173, 170),white);
+    border-radius: 3rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ozellik .box-container .box img{
+    width:100%;
+    object-fit: cover ;
+
+
+}
+
+.ozellik .box-container .box .box-head .title{
+    font-size:2rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+
+}
+
+.ozellik .box-container .box .box-head h3{
+    font-size:2.0rem;
+    padding: 1rem 0;
+}
+
+.ozellik .box-container .box-middle p{
+    font-size:2rem;
+    padding: 2.5rem 0;
+text-transform: initial;
+}
+
+.ozellik .box-container .box-middle p span{
+    font-size:3rem;
+    padding: 1rem 0;
+    text-transform: initial;
+}
